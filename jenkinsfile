@@ -32,7 +32,7 @@ pipeline {
                 sh '''
                     echo "Test stage"
                     test -f build/index.html
-                    nmp test
+                    npm test
                 '''
             }
 
