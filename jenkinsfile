@@ -31,10 +31,8 @@ pipeline {
             }
             steps{
                 sh '''
-                    ls-da
-                    nmp ci
-                    nmp run tests
-                    ls-da
+                    test -f build/index.html
+                    nmp test
                 '''
             }
 
