@@ -21,7 +21,7 @@ pipeline {
                 '''
             }
         }
-        stage('Test'{
+        stage('Test'){
             agent{
                 docker{
                     echo 'Test stage'
@@ -39,4 +39,3 @@ pipeline {
         }
     }
 }
-
