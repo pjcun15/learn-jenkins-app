@@ -20,6 +20,21 @@ pipeline {
                 '''
             }
         }
+        stage('Test'{
+            agent{
+                docker{
+                }
+            }
+            steps{
+                sh '''
+                    ls-da
+                    nmp ci
+                    nmp run tests
+                    ls-da
+                '''
+            }
+
+        }
     }
 }
 
